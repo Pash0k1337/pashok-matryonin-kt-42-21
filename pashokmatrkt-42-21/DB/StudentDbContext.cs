@@ -6,8 +6,8 @@ namespace pashokmatrkt_42_21.DB
 {
     public class StudentDbContext : DbContext
     {
-        DbSet<Student> Students { get; set; }
-        DbSet<Group> Groups { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Group> Groups { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -11,7 +11,7 @@ using pashokmatrkt_42_21.DB;
 namespace pashokmatrkt4221.Migrations
 {
     [DbContext(typeof(StudentDbContext))]
-    [Migration("20250119152550_CreateDatabase")]
+    [Migration("20250119191059_CreateDatabase")]
     partial class CreateDatabase
     {
         /// <inheritdoc />
@@ -77,6 +77,7 @@ namespace pashokmatrkt4221.Migrations
                         .HasComment("Фамилия студента");
 
                     b.Property<string>("MiddleName")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar")
                         .HasColumnName("c_student_middlename")

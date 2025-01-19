@@ -74,6 +74,7 @@ namespace pashokmatrkt4221.Migrations
                         .HasComment("Фамилия студента");
 
                     b.Property<string>("MiddleName")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar")
                         .HasColumnName("c_student_middlename")
