@@ -11,7 +11,7 @@ using pashokmatrkt_42_21.DB;
 namespace pashokmatrkt4221.Migrations
 {
     [DbContext(typeof(StudentDbContext))]
-    [Migration("20250117142646_CreateDatabase")]
+    [Migration("20250119152550_CreateDatabase")]
     partial class CreateDatabase
     {
         /// <inheritdoc />
@@ -19,7 +19,7 @@ namespace pashokmatrkt4221.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.0")
+                .HasAnnotation("ProductVersion", "7.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
