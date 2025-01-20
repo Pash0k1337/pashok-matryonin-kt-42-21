@@ -11,7 +11,7 @@ using pashokmatrkt_42_21.DB;
 namespace pashokmatrkt4221.Migrations
 {
     [DbContext(typeof(StudentDbContext))]
-    [Migration("20250119191059_CreateDatabase")]
+    [Migration("20250120121247_CreateDatabase")]
     partial class CreateDatabase
     {
         /// <inheritdoc />
