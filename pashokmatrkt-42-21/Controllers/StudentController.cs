@@ -25,6 +25,20 @@ namespace pashokmatrkt_42_21.Controllers
 
             return Ok(students);
         }
+        [HttpPost("GetStudentsByName")]
+        public async Task<IActionResult> GetStudentsByName(StudentNameFilter filter, CancellationToken cancellationToken = default)
+        {
+            var students = await _studentService.GetStudentsByNameAsync(filter, cancellationToken);
+
+            return Ok(students);
+        }
+        [HttpPost("GetStudentsByLastName")]
+        public async Task<IActionResult> GetStudentsByLastName(StudentLastNameFilter filter, CancellationToken cancellationToken = default)
+        {
+            var students = await _studentService.GetStudentsByLastNameAsync(filter, cancellationToken);
+
+            return Ok(students);
+        }
 
     }
 }
